@@ -1,0 +1,43 @@
+﻿@model WebAnimales.Models.Animales
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Animales</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Raza)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Raza)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Edad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Edad)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Propietario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Propietario)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AnimalesID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
